@@ -1,8 +1,4 @@
+from django.conf.urls import url
+from . import views
 
-from django.conf.urls import include, url
-from django.contrib import admin
-
-urlpatterns = [
-    (r'^admin/', admin.site.urls),
-    (r'^music/', include('music.urls'))
-]
+urlpathern = (r'^music/$', views.index),
