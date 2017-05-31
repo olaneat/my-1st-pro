@@ -4,5 +4,5 @@ from django.contrib import admin
 
 urlpatterns = [
     (r'^admin/', admin.site.urls),
-	(r'^music/', include('music.urls')),	
+    (r'^music/', include('music.urls'))
 ]
