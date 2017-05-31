@@ -1,0 +1,27 @@
+THIS IS THE APP URLS CODE
+// I save this url in the Music App folder that y am using music for the name of the url
+
+from django.conf.urls import urls
+from. import views
+
+urlpattern = [
+(r^'$'/ views.index name = 'index'),
+]
+
+THIS IS THE MAIN WEBSITE URL
+from django.conf.urls import include, urls
+from django.contrib import admin
+
+urlpatterns = [
+(r^'admin/'admin.site.urls),
+(r^'music/' include ('music.urls'))
+]
+
+
+//THIS IS THE VIEW CODE
+
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse ("This is the music home page" )
